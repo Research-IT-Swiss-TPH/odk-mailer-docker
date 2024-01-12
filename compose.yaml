@@ -1,7 +1,15 @@
 services:
   cli:
+    #image: odk-mailer:rc1
     build: 
       context: .
       dockerfile: Dockerfile
     tty: true
-      
+    volumes:
+      - odk_mailer_data:/root/.odk-mailer
+      - type: bind
+        source: cli-data/test-local
+        target: /root/test-local
+
+volumes:
+  odk_mailer_data:

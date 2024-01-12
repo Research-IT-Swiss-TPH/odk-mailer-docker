@@ -1,0 +1,8 @@
+Hello {firstname} {lastname},
+
+Your personal household_id is {hh_id}
+
+Copy and Paste it to your Browser.
+
+Kind Regards,
+Your ODK-Mailer Team

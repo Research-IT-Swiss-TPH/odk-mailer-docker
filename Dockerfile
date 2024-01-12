@@ -6,6 +6,6 @@ RUN apt install nano
 
 WORKDIR /root
 
-RUN pip install --no-cache-dir odk-mailer
+RUN pip install --ignore-installed odk-mailer
 
 RUN mkdir -p .odk-mailer

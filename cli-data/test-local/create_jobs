@@ -1,0 +1,6 @@
+#! /bin/bash
+
+
+odk-mailer create --source=path::mail.csv --fields=email::firstname,lastname,hh_id --message=odk-mailer@swisstph.ch::"Sent from odk-mailer:txt"::path::mail.txt::plain --schedule=now
+
+odk-mailer create --source=path::mail.csv --fields=email::firstname,lastname,hh_id --message=odk-mailer@swisstph.ch::"Sent from odk-mailer:html"::path::mail.html::html --schedule=now
