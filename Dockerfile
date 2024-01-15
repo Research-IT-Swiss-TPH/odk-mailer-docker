@@ -1,5 +1,6 @@
 FROM python:3 
 # Debian GNU/Linux 12
+ENV TZ="Europe/Zurich"
 
 RUN apt update
 RUN apt install nano
