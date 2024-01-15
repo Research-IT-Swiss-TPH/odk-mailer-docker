@@ -7,6 +7,7 @@ services:
     tty: true
     volumes:
       - odk_mailer_data:/root/.odk-mailer
+      - odk_mailer_projects:/root/projects
       - type: bind
         source: ./test-data
         target: /root/test-data
@@ -19,3 +20,4 @@ services:
 
 volumes:
   odk_mailer_data:
+  odk_mailer_projects:

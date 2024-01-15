@@ -6,6 +6,7 @@ RUN apt update
 RUN apt install nano
 
 WORKDIR /root
+RUN mkdir -p projects
 
 RUN pip install --ignore-installed odk-mailer
 
