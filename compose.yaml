@@ -10,6 +10,12 @@ services:
       - type: bind
         source: test-data
         target: /root/test-data
+    environment:
+        - SMTP_HOST=${SMTP_HOST}
+        - SMTP_PORT=${SMTP_PORT}
+        - SMTP_USER=${SMTP_USER}
+        - SMTP_PASS=${SMTP_PASS}
+        - ODK_HOST=${ODK_HOST}
 
 volumes:
   odk_mailer_data:
