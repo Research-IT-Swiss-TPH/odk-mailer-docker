@@ -4,7 +4,7 @@ ENV TZ="Europe/Zurich"
 
 RUN apt update
 RUN apt upgrade -y
-RUN apt install nano cron
+RUN apt install nano cron -y
 
 WORKDIR /root
 RUN mkdir -p projects
