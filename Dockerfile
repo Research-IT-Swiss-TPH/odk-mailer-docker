@@ -3,7 +3,8 @@ FROM python:3
 ENV TZ="Europe/Zurich"
 
 RUN apt update
-RUN apt install nano
+RUN apt upgrade -y
+RUN apt install nano cron
 
 WORKDIR /root
 RUN mkdir -p projects
