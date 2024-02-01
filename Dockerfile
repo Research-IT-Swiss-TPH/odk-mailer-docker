@@ -9,6 +9,6 @@ RUN apt install nano cron -y
 WORKDIR /root
 RUN mkdir -p projects
 
-RUN pip install --ignore-installed odk-mailer
+RUN pip install odk-mailer --upgrade
 
 RUN mkdir -p .odk-mailer
